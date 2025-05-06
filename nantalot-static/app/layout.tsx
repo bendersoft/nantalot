@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Natalot",
   description: "A l’abordage de la Loire nantaise et ses affluents ",
-};  
+};
 
 export default function RootLayout({
   children,
