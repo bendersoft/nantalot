@@ -1,26 +1,50 @@
-import Rseact from 'react';
+import type React from "react";
+import TextSection from "../components/TextSection";
 
-const EntreprisesPage = () => {
-    return (
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-            <h1>Balades en bateau pour les entreprises</h1>
-            <p>
-                Offrez à votre équipe une expérience unique avec nos balades en bateau spécialement conçues pour les entreprises. 
-                Renforcez les liens entre collègues tout en profitant d'un moment de détente sur l'eau.
-            </p>
-            <h2>Pourquoi choisir nos balades en bateau ?</h2>
-            <ul>
-                <li>Moments de convivialité et de partage</li>
-                <li>Découverte de paysages magnifiques</li>
-                <li>Options personnalisées pour répondre à vos besoins</li>
-            </ul>
-            <h2>Contactez-nous</h2>
-            <p>
-                Pour organiser une sortie en bateau pour votre entreprise, n'hésitez pas à nous contacter. 
-                Nous serons ravis de vous aider à planifier une expérience inoubliable.
-            </p>
+const EntreprisesPage: React.FC = () => {
+  return (
+    <main style={{ fontFamily: "Arial, sans-serif" }}>
+      <TextSection
+        title="Balades en bateau pour les entreprises"
+        content={
+          <>
+            Offrez à votre équipe une expérience unique avec nos balades en bateau spécialement conçues pour les entreprises. 
+            Renforcez les liens entre collègues tout en profitant d&apos;un moment de détente sur l&apos;eau.
+          </>
+        }
+      />
+      <TextSection
+        title="Pourquoi choisir nos balades en bateau ?"
+        content={
+          <ul className="list-disc list-inside">
+            <li>Moments de convivialité et de partage</li>
+            <li>Découverte de paysages magnifiques</li>
+            <li>Options personnalisées pour répondre à vos besoins</li>
+          </ul>
+        }
+        bgColor="bg-teal-900"
+        textColor="text-gray-100"
+      />
+      <TextSection
+        title="Contactez-nous"
+        content={
+          <>
+            Pour organiser une sortie en bateau pour votre entreprise, n&apos;hésitez pas à nous contacter. 
+            Nous serons ravis de vous aider à planifier une expérience inoubliable.
+          </>
+        }
+      />
+            <section className="bg-[url('/3.jpg')] bg-cover bg-center text-white text-center py-24 px-6">
+      <div className="bg-teal-800 bg-opacity-10 p-6 max-w-md mx-auto">
+        <h2 className="text-3xl font-bold">Prêt pour l&apos;aventure ?</h2>
+        <p className="mt-4">Réservez votre balade et vivez une expérience mémorable</p>
+        <button type="button" className="mt-6 px-6 py-3 bg-teal-600 hover:bg-teal-700 rounded-full text-white font-semibold">
+          Réserver maintenant
+        </button>
         </div>
-    );
+      </section>
+    </main>
+  );
 };
 
 export default EntreprisesPage;

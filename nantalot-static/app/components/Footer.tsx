@@ -1,5 +1,27 @@
-import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import { menuItems } from "./Menu";
+import { FaInstagram } from "react-icons/fa";
+
+export const menuItems = {
+	"accueil": {
+		id: "accueil",
+		title: "Accueil",
+		href: "/",
+	},
+	"particuliers": {
+		id: "particuliers",
+		title: "Particuliers",
+		href: "/particuliers",
+	},
+	"entreprises": {
+		id: "entreprises",
+		title: "Entreprises",
+		href: "/entreprises",
+	},
+	"contact": {
+		id: "contact",
+		title: "Contact",
+		href: "/contact",
+	},
+};
 
 const Footer = () => {
 	return (
@@ -24,18 +46,18 @@ const Footer = () => {
 				<div>
 					<h3 className="text-lg font-semibold mb-3">Contact</h3>
 					<p>NANTALOT</p>
-					<p>Placeholder</p>
-					<p>NANTES</p>
+					<p>Ponton Belem</p>
+					<p>Quai de la Fosse</p>
+					<p>44000 Nantes</p>
 					<p>
-						Email :
 						<a href="mailto:contact@microset.com" className="hover:underline">
-							contact@microset.com
+						contactnantalot@gmail.com
 						</a>
 					</p>
 					<p>
 						Tél :
 						<a href="tel:+335 56 40 31 44" className="hover:underline">
-							+33 5 56 40 31 44
+							+336 22 12 95 03
 						</a>
 					</p>
 				</div>
@@ -44,14 +66,9 @@ const Footer = () => {
 				<div>
 					<h3 className="text-lg font-semibold mb-3">Suivez-nous</h3>
 					<div className="flex space-x-4">
-						<a href="/" className="hover:text-gray-700">
+						<a href="https://www.instagram.com/nantalot44/" className="hover:text-gray-200 flex gap-2 ">
 							<FaInstagram size={24} />
-						</a>
-						<a href="/" className="hover:text-gray-700">
-							<FaTwitter size={24} />
-						</a>
-						<a href="/" className="hover:text-gray-700">
-							<FaLinkedin size={24} />
+							<span>@nantalot44</span>
 						</a>
 					</div>
 				</div>
@@ -61,13 +78,8 @@ const Footer = () => {
 					<h3 className="text-lg font-semibold mb-3">Légal</h3>
 					<ul className="space-y-2">
 						<li>
-							<a href="/mentions" className="hover:underline">
+							<a href="/info/mentions" className="hover:underline">
 								Mentions légales
-							</a>
-						</li>
-						<li>
-							<a href="/confidentialite" className="hover:underline">
-								Politique de confidentialité
 							</a>
 						</li>
 					</ul>

@@ -28,9 +28,9 @@ function Menu() {
 	const pathname = usePathname();
 
 	return (
-		<header className="border-b-1 border-b-teal-500 bg-gray-50 text-gray-100 font-semibold z-50 sticky top-0 h-20">
+		<header className="flex border-b-1 border-b-teal-500 bg-gray-50 text-gray-100 font-semibold z-50 sticky top-0 h-20">
+			<img src="/logoNantalot.png" alt="Logo of Nantalot" className="mx-auto" />
 			<nav className="flex justify-between items-center p-4 max-w-7xl mx-auto h-full">
-				<div className="text-lg">Logo</div>
 				<ul className="flex space-x-8 items-center h-full">
 					{Object.entries(menuItems).map(([key, { id, title, href }]) => {
 						const isActive = pathname === href;
