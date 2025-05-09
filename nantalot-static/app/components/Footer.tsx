@@ -3,10 +3,9 @@ import { menuItems } from "../utils/menu-util";
 
 const Footer = () => {
 	return (
-		<footer className="bg-teal-900 text-gray-200 py-8">
-			<div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+		<footer className="bg-teal-900 text-gray-200 py-8 text-base">
+			<div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8">
 				{/* Navigation */}
-
 				<div>
 					<h3 className="text-lg font-semibold mb-3">Navigation</h3>
 					<ul className="space-y-2">

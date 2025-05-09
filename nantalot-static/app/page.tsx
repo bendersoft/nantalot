@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="w-full">
       {/* Section 1 - Hero */}
-      <section className="bg-[url('/hero.jpg')] bg-cover bg-center text-teal-400 text-center py-24 relative">
+      <section className="bg-[url('/hero.jpg')] bg-cover bg-center text-teal-400 text-center py-16 sm:py-24 relative">
         <div className="relative z-10">
    <img src="/logoNantalot.png" alt="Logo of Nantalot" className="w-24 mx-auto bg-white bg-opacity-50 p-2" />
           <h1 className="text-4xl sm:text-5xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Bienvenue sur Nantalot</h1>
@@ -20,9 +20,9 @@ export default function Home() {
       />
 
       {/* Section 3 - Pour qui ? */}
-      <section className="bg-teal-900 py-16 px-6 space-y-6">
-        <h2 className="text-2xl text-center font-semibold text-gray-100">Pour qui ?</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto font-semibold text-gray-800">
+      <section className="bg-teal-900 p-12 sm:p-16 space-y-6">
+        <h2 className="text-lg sm:text-2xl text-center font-semibold text-gray-100">Pour qui ?</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:max-w-4xl mx-auto font-semibold text-gray-800">
           <a type="button" href="/entreprises" className="bg-white p-6 rounded-lg shadow text-center">Entreprises</a>
           <a type="button" href="/entreprises" className="bg-white p-6 rounded-lg shadow text-center">Groupes & Familles</a>
           <a type="button" href="/entreprises" className="bg-white p-6 rounded-lg shadow text-center">Associations</a>
@@ -57,11 +57,11 @@ export default function Home() {
       />
 
       {/* Section 7 - CTA finale */}
-      <section className="bg-[url('/3.jpg')] bg-cover bg-center text-white text-center py-24 px-6">
-      <div className="bg-teal-800 bg-opacity-10 p-6 max-w-md mx-auto">
-        <h2 className="text-3xl font-bold">Prêt pour l&apos;aventure ?</h2>
-        <p className="mt-4">Réservez votre balade et vivez une expérience mémorable</p>
-        <button type="button" className="mt-6 px-6 py-3 bg-teal-600 hover:bg-teal-700 rounded-full text-white font-semibold">
+      <section className="bg-[url('/3.jpg')] bg-cover bg-center text-white text-center py-12 sm:py-24 px-12 sm:px-6">
+      <div className="flex flex-col gap-3 sm:gap-8 bg-teal-800 bg-opacity-10 p-4 sm:p-6 max-w-md mx-auto">
+        <h2 className="text-lg sm:text-3xl font-bold">Prêt pour l&apos;aventure ?</h2>
+        <p>Réservez votre balade et vivez une expérience mémorable</p>
+        <button type="button" className="w-fit mx-auto px-6 py-3 bg-teal-600 hover:bg-teal-700 rounded-full text-white font-semibold">
           Réserver maintenant
         </button>
         </div>

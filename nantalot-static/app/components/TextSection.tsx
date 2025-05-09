@@ -18,8 +18,8 @@ interface TextSectionProps {
     textColor = "text-gray-800",
   }: TextSectionProps) {
     return (
-      <section className={`${bgColor} py-16 px-16 space-y-4`}>
-        <h2 className={`text-2xl font-semibold ${textColor}`}>{title}</h2>
+      <section className={`${bgColor} p-8 sm:p-16  space-y-4`}>
+        <h2 className={`text-lg sm:text-2xl font-semibold ${textColor}`}>{title}</h2>
         {subtitle && <p className="italic text-gray-500">{subtitle}</p>}
         <div className={`${textColor}`}>{content}</div>
         {listItems && (
