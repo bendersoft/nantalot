@@ -28,7 +28,7 @@ const Footer = () => {
 					<p>44000 Nantes</p>
 					<p>
 						<a href="mailto:contact@microset.com" className="hover:underline">
-						contactnantalot@gmail.com
+							contactnantalot@gmail.com
 						</a>
 					</p>
 					<p>
@@ -43,7 +43,10 @@ const Footer = () => {
 				<div>
 					<h3 className="text-lg font-semibold mb-3">Suivez-nous</h3>
 					<div className="flex space-x-4">
-						<a href="https://www.instagram.com/nantalot44/" className="hover:text-gray-200 flex gap-2 ">
+						<a
+							href="https://www.instagram.com/nantalot44/"
+							className="hover:text-gray-200 flex gap-2 "
+						>
 							<FaInstagram size={24} />
 							<span>@nantalot44</span>
 						</a>
